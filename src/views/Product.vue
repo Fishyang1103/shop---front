@@ -47,6 +47,7 @@ export default {
       price: 0,
       description: '',
       image: '',
+      // sell 要 true 不然一點入商品頁面會出現 商品下架的遮罩
       sell: true,
       category: '',
       quantity: 0
