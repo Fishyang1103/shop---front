@@ -28,12 +28,12 @@ b-container#product
       b-col(cols='12')
         h1 {{ name }}
       b-col(cols='6')
-        h4.text-right ${{price}}
+        h4.text-right ${{ price }}
         b-form-input(type='number' v-model.number='quantity' :state='quantityState' min='0')
         b-btn.mt-3(variant='warning' @click='addCart') 加入購物車
 </template>
 <style scpoed>
-h1{
+h1 {
   color: red;
   font-size: 50px;
 }
@@ -47,7 +47,7 @@ export default {
       price: 0,
       description: '',
       image: '',
-      sell: false,
+      sell: true,
       category: '',
       quantity: 0
     }
